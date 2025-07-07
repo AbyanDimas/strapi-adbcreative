@@ -1,0 +1,53 @@
+{
+  "kind": "collectionType",
+  "collectionName": "artikels",
+  "info": {
+    "singularName": "artikel",
+    "pluralName": "artikels",
+    "displayName": "artikel"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "judul": {
+      "type": "string"
+    },
+    "Deskripsi": {
+      "type": "text"
+    },
+    "Gambar": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "Tag": {
+      "type": "enumeration",
+      "enum": [
+        "Teknologi",
+        "Karir",
+        "Event",
+        "Pembelajaran",
+        "Inspirasi",
+        "Proyek",
+        "Informasi Sekolah",
+        "Kompetisi",
+        "Kegiatan Siswa",
+        "Kolaborasi"
+      ]
+    },
+    "seoURL": {
+      "type": "uid",
+      "targetField": "judul"
+    },
+    "Konten": {
+      "type": "richtext"
+    }
+  }
+}
